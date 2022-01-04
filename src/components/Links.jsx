@@ -11,7 +11,7 @@ const iconStyles = {
         color: 'primary.dark',
         transform: 'scale(1.1)',
         transition: '1s color, 1s transform',
-    }
+    },
 
 };
 

@@ -5,17 +5,13 @@ import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles(theme => ({
     root: {
         textAlign: 'center',
-        padding: '20px',
-        [theme.breakpoints.up('lg')]: {
-            width: '30vw',
-        },
-
-        [theme.breakpoints.down('lg')]: {
-            width: '45vw',
+        padding: '35px',
+        [theme.breakpoints.up('md')]: {
+            width: '550px',
         },
 
         [theme.breakpoints.down('md')]: {
-            width: '55vw',
+            width: '70vw',
         },
 
         [theme.breakpoints.down('sm')]: {

@@ -22,12 +22,13 @@ const Links = ({ quote, author }) => {
         `"${quote}" - ${author}`
       )}&hashtags=quotes`;
 
+    const facebookLink = `https://www.facebook.com/sharer/sharer.php?quote=${encodeURIComponent(`"${quote}" - ${author}`)}`;
     return (
         <div>
         <a id="tweet-quote" href={ twitterLink } style={{ textDecoration: 'none'}}>
                 <TwitterIcon sx= {iconStyles} />
         </a>
-        <a href='#' style={{ textDecoration: 'none'}} >
+        <a  id="facebook-quote" href= {facebookLink} style={{ textDecoration: 'none'}} >
                 <FacebookIcon sx= {iconStyles}  />
         </a>
         </div>
